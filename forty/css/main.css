@@ -19,7 +19,8 @@
 .heading-container,
 .contact-container,
 .precontact-container,
-nav {
+nav,
+footer {
   background-color: rgb(33,39,68);
   color: white;
   padding: 20px;
@@ -44,6 +45,28 @@ nav {
 }
 
 .container-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-container {
+  width: 100%;
+  padding-top: 50px
+}
+
+.form-name {
+  width: 100%;
+}
+
+.form-email {
+  width: 100%;
+}
+
+.form-message {
+  width: 100%;
+}
+
+form {
   display: flex;
   flex-wrap: wrap;
 }
@@ -163,6 +186,95 @@ hr {
   width: 225px;
 }
 
+.button-storage {
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.contact-container {
+  border-bottom: 2px solid rgb(42,47,74);
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+#mail,
+#message,
+#name {
+  width: 100%;
+  background-color: rgb(42,47,74);
+  border: none;
+  padding: 12px;
+}
+
+#message {
+  height: 200px;
+}
+
+#mail,
+#name {
+  height: 50px;
+}
+
+#submitButton {
+  padding: 15px 30px;
+  color: rgb(33,39,68);
+  margin-right: 10px;
+  transition: all 0.5s ease;
+}
+
+#submitButton:hover {
+  background: rgb(155,241,255);
+  border-color: rgb(155,241,255);
+}
+
+#resetButton {
+  padding: 15px 30px;
+  background: rgb(33,39,68);
+  color: white;
+  border: 2px solid white;
+  transition: all 0.5s ease
+}
+
+#resetButton:hover {
+  border: 2px solid rgb(155,241,255);
+  color: rgb(155,241,255);
+}
+
+.contact-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-email,
+#contact-phone,
+#contact-address {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  border-bottom: 2px solid rgb(42,47,74);
+
+  padding-left: 30px;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#contact-email {
+  border-top: 2px solid rgb(42,47,74);
+}
+
+#contact-address {
+  border-bottom: none;
+}
+
 @media (min-width: 768px) {
   .container-33,
   .container-66 {
@@ -179,6 +291,19 @@ hr {
   .precontact-content {
     width: 85%;
     margin: 0 auto;
+  }
+
+  .form-email,
+  .form-name {
+    width: 49.5%;
+  }
+
+  .form-name {
+    margin-right: 0.5%
+  }
+
+  .form-email {
+    margin-left: 0.5%
   }
 }
 
@@ -217,5 +342,40 @@ hr {
 
   h3 {
     font-size: 2em;
+  }
+
+  .form-container {
+    width: 60%;
+    border-right: 2px solid rgb(42,47,74);
+    padding-left: 30px;
+    padding-right: 50px;
+  }
+
+  .contact-info {
+    width: 40%;
+  }
+
+  #contact-email,
+  #contact-phone,
+  #contact-address {
+    min-width: 100%;
+    border-bottom: 2px solid rgb(42,47,74);
+    padding-left: 90px;
+  }
+
+  #contact-address {
+    border-bottom: none;
+  }
+
+  .contact-head {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+
+  .contact-content {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
   }
 }
