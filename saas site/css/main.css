@@ -29,7 +29,9 @@ body {
 
 #home {
   width: 100%;
-  min-height: 540px;
+  margin-top: 64px;
+  padding-top: 20px;
+  min-height: 500px;
   background: #2a0845;
   display: flex;
   flex-direction: column;
@@ -177,13 +179,64 @@ body {
   font-size: 1.2em;
   color: #2a0845;
   border: 3px solid #2a0845;
+  margin-bottom: 40px;
 }
 
 /* STATS START */
 
 #software-summary {
-
+  width: 90%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
 }
+
+#software-summary span {
+  width: 100%;
+  color: #777;
+  font-weight: 400;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 1.5em;
+}
+
+.software-summary-left {
+  text-align: left;
+  padding-top: 20px;
+  width: 40%;
+}
+
+.software-summary-left h4 {
+  font-size: 1.5em;
+  color: #777;
+  margin-bottom: 20px;
+  line-height: 2;
+}
+
+.software-summary-left p {
+  font-size: 1.3em;
+  color: #777;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+.software-summary-right {
+  padding-top: 20px;
+  width: 60%;
+}
+
+.read-more {
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  border: 2px solid black;
+  color: black;
+  margin-left: 15px;
+}
+
+/* STATS END */
 
 #features {
 
