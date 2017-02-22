@@ -245,9 +245,145 @@ body {
 
 /* STATS END */
 
+/* FEATURES START */
+
 #features {
+  width: 100%;
+}
+
+#feature-nav {
+  width: 60%;
+  margin: 0 auto;
+}
+
+#feature-nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+}
+
+#feature-nav li {
+  height: 85px;
+  display: inline;
+  padding: 30px 50px;
+  font-size: 1.5em;
+  color: #555
+}
+
+#feature-nav li:hover,
+#feature-nav li:focus {
+  color: #2a0845;
+  border-bottom: 4px solid #2a0845;
+}
+
+#engage {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#engage h2 {
+  width: 100%;
+  display: block;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 2.5em;
+  color: #2a0845;
+    font-weight: lighter;
+}
+
+.engage-left {
+  width: 70%;
+  text-align: left;
+  padding: 30px;
+}
+
+.engage-left h3 {
+  font-size: 2em;
+  color: #555;
+  margin-bottom: 30px;
+  font-weight: lighter;
+}
+
+.engage-left  li {
+  font-size: 1.4em;
+  color: #2a0845;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  padding-left: 20px;
+}
+
+.engage-left li p {
+  color: #555;
+}
+
+.engage-right {
+  width: 30%
+}
+
+
+#repeat {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#repeat h2 {
+  width: 100%;
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 2.5em;
+  color: #2a0845;
+    font-weight: lighter;
+}
+
+.repeat-left {
+  text-align: center;
+  width: 40%;
+}
+
+.repeat-right {
+  width: 60%;
+  text-align: left;
+  padding: 30px;
+}
+
+.repeat-right h3 {
+  font-size: 2em;
+  color: #555;
+  margin-bottom: 30px;
+  font-weight: lighter;
+}
+
+.repeat-right li {
+  font-size: 1.4em;
+  color: #2a0845;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  padding-left: 20px;
+}
+
+#repeat .demo {
+  margin-top: 30px;
+}
+
+#retain {
 
 }
+
+/* FEATURES END */
 
 #pricing {
 
