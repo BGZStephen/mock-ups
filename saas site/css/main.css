@@ -27,22 +27,6 @@ body {
 
 /* HOME SECTION + NAVBAR */
 
-#home {
-  width: 100%;
-  margin-top: 64px;
-  padding-top: 20px;
-  min-height: 500px;
-  background: #2a0845;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#home-content {
-  width: 52%;
-  margin: 0 auto;
-}
-
 #navbar-container {
   width: 100%;
   position: fixed;
@@ -55,10 +39,10 @@ body {
 }
 
 #navbar {
-  width: 52%;
+  width: 90%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 5px;
   letter-spacing: 0.1em;
 }
@@ -68,9 +52,14 @@ body {
   color: white;
 }
 
+#navbar li:hover {
+  border-bottom: 2px solid #f38900;
+}
+
 #logo {
   color: white;
   padding: 20px 20px 10px 0;
+  display: none;
 }
 
 .nav-list {
@@ -81,16 +70,35 @@ body {
 }
 
 .nav-item {
-  padding: 20px 20px;
+  height: 45px;
+  margin: 0 20px;
+  padding: 20px 0 5px 0;
+  margin-bottom: 20px;
 }
 
+#home {
+  width: 100%;
+  margin-top: 50px;
+  padding-top: 20px;
+  min-height: 500px;
+  background: #2a0845;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#home-content {
+  width: 60%;
+  margin: 0 auto;
+}
 
 
 #home h1 {
   color: white;
   margin-bottom: 30px;
-  font-size: 3em;
-  font-weight: 600;
+  font-size: 2.5em;
+  font-weight: 400;
 }
 
 #home p {
@@ -102,6 +110,8 @@ body {
 
 .demo,
 .video {
+  width: 100%;
+  margin: 0 auto;
   padding: 15px 30px;
   border-radius: 5px;
   font-size: 1.2em;
@@ -109,7 +119,6 @@ body {
 }
 
 .demo {
-  display: inline;
   background: none;
   border: none;
   background: #f38900;
@@ -117,10 +126,9 @@ body {
 }
 
 .video {
-  display: inline;
+  margin-top: 10px;
   background: none;
   border: 2px solid white;
-  margin-left: 15px;
 }
 
 /* END HOME + NAVBAR*/
@@ -165,7 +173,10 @@ body {
 
 .stats-container {
   text-align: center;
-  width: 33%;
+  width: 100%;
+  padding-bottom: 30px;
+  margin-top: 30px;
+  border-bottom: 2px solid #555;
 }
 
 .stats-container h3 {
@@ -212,7 +223,7 @@ body {
 .software-summary-left {
   text-align: left;
   padding-top: 20px;
-  width: 40%;
+  width: 100%;
 }
 
 .software-summary-left h4 {
@@ -231,16 +242,22 @@ body {
 
 .software-summary-right {
   padding-top: 20px;
-  width: 60%;
+  width: 100%;
+}
+
+.software-summary-right img{
+  width: 100%;
 }
 
 .read-more {
+  width: 100%;
+  margin: 0 auto;
   padding: 15px 30px;
   border-radius: 5px;
   font-size: 1.2em;
   border: 2px solid black;
   color: black;
-  margin-left: 15px;
+  margin-top: 10px;
   background: none;
 }
 
@@ -248,18 +265,28 @@ body {
 
 /* FEATURES START */
 
+/* SECTION ORDERING */
+
+.engage-left { order: 2; }
+.engage-right { order: 1; }
+.repeat-left { order: 1; }
+.repeat-right { order: 2; }
+
+/* SECTION ORDERING END */
+
 #features {
   width: 100%;
 }
 
 #feature-nav {
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
 }
 
 #feature-nav ul {
+  width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
   list-style: none;
@@ -267,7 +294,7 @@ body {
 
 #feature-nav li {
   height: 75px;
-  display: inline;
+  display: inline-flex;
   padding: 30px 30px;
   font-size: 1em;
   color: #555;
@@ -301,7 +328,7 @@ body {
 }
 
 .engage-left {
-  width: 60%;
+  width: 90%;
   text-align: left;
   padding: 30px;
 }
@@ -326,7 +353,7 @@ body {
 }
 
 .engage-right {
-  width: 40%
+  width: 90%;
 }
 
 
@@ -353,11 +380,11 @@ body {
 
 .repeat-left {
   text-align: center;
-  width: 40%;
+  width: 90%;
 }
 
 .repeat-right {
-  width: 60%;
+  width: 90%;
   text-align: left;
   padding: 30px;
 }
@@ -417,8 +444,14 @@ body {
   width: 100%;
 }
 
+#retain img {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
 #retain-features li {
-  width: 45%;
+  width: 90%;
   margin-top: 20px;
   font-weight: lighter;
   color: #2a0845;
@@ -469,11 +502,12 @@ li.selected {
 }
 
 .price-container {
-  width: 23%;
+  width: 100%;
   min-height: 100%;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .price {
@@ -513,10 +547,9 @@ li.selected {
   font-size: 1.2em;
   border: 2px solid #f38900;
   color: #f38900;
-  margin-left: 15px;
   background: none;
-  margin: 0 auto;
   margin-top: auto;
+  margin-bottom: 40px;
 }
 
 /* FOOTER START */
@@ -531,10 +564,12 @@ li.selected {
 }
 
 #footer-content {
+  margin-top: 30px;
+  margin-bottom: 30px;
   height: 110px;
   width: 52%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
@@ -562,5 +597,139 @@ li.selected {
 
 /* MEDIA QUERIES */
 
+@media (min-width: 540px) {
+  .price-container {
+    width: 45%;
+  }
+
+  .price-container {
+    margin-bottom: 40px;
+  }
+
+
+}
+
+@media (min-width: 768px) {
+
+  #logo {
+    display: inline-flex;
+  }
+
+  #navbar {
+    width: 52%;
+    justify-content: space-between;
+  }
+
+  #home-content {
+    width: 52%;
+    margin: 0 auto;
+  }
+
+  #home h1 {
+    font-size: 3em;
+  }
+
+  .demo,
+  .video {
+    width: auto;
+  }
+
+  .demo {
+    display: inline;
+    background: none;
+    border: none;
+    background: #f38900;
+    border: 2px solid #f38900;
+  }
+
+  .video {
+    display: inline;
+    background: none;
+    border: 2px solid white;
+    margin-left: 15px;
+  }
+
+  .stats-container {
+    text-align: center;
+    width: 33%;
+    border: none;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  #feature-nav ul {
+    width: 60%;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .software-summary-left {
+    width: 40%;
+  }
+
+  .software-summary-right {
+    width: 60%;
+  }
+
+  .software-summary-right img {
+    width: 60%;
+  }
+
+  .read-more {
+    width: auto;
+    margin-top: 0;
+    margin-left: 15px;
+  }
+
+  .engage-left { order: 1; }
+  .engage-right { order: 2; }
+  .repeat-left { order: 1; }
+  .repeat-right { order: 2; }
+
+  .engage-left {
+    width: 60%;
+  }
+
+  .engage-right {
+    width: 40%
+  }
+
+  .repeat-left {
+    width: 40%;
+  }
+
+  .repeat-right {
+    width: 60%;
+  }
+
+  #retain-features li {
+    width: 45%;
+  }
+
+  .price-container {
+    width: 45%;
+  }
+
+  .sign-up {
+    margin-bottom: 0px;
+  }
+
+  #footer-content {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .price-container {
+    width: 23%;
+  }
+
+  .price-container {
+    margin-bottom: 0px;
+  }
+}
 
 /* MEDIA QUERIES END */
