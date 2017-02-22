@@ -433,7 +433,90 @@ body {
 /* FEATURES END */
 
 #pricing {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+.pamynet-plan {
+
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.pamynet-plan li {
+  display: inline;
+  padding: 25px 55px;
+}
+
+li.selected {
+  background: #2a0845;
+  color: white;
+}
+
+#plan-container {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.price-container {
+  width: 23%;
+  min-height: 100%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.price {
+  width: 100%;
+  background: #2a0845;
+  height: 150px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.price p {
+  font-size: 3.2em;
+}
+
+.price h3 {
+  font-size: 1.3em;
+}
+
+.price p.frequency {
+  font-size: .8em;
+}
+
+.price-container h4 {
+  margin-top: 20px;
+  color: #555;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+.sign-up {
+  width: 75%;
+  height: 60px;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  border: 2px solid #f38900;
+  color: #f38900;
+  margin-left: 15px;
+  background: none;
+  margin: 0 auto;
+  margin-top: auto;
 }
 
 /* FOOTER START */
@@ -476,3 +559,8 @@ body {
 }
 
 /* FOOTER END */
+
+/* MEDIA QUERIES */
+
+
+/* MEDIA QUERIES END */
