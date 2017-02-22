@@ -561,6 +561,7 @@ li.selected {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 
 #footer-content {
@@ -579,18 +580,27 @@ li.selected {
   list-style: none;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .footer-links li {
-  padding: 15px 30px;
+}
+
+.footer-links a {
+  text-decoration: none;
   color: white;
 }
 
+.footer-social a {
+  text-decoration: none;
+}
+
 .footer-social li {
-  padding: 15px 30px;
-  color: white;
+  padding: 0 30px;
+}
+
+#footer img {
+  width: 40px;
+  height: 40px;
 }
 
 /* FOOTER END */
